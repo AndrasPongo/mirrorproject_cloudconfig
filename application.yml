@@ -30,4 +30,4 @@ logging:
   level:
     root: INFO
     
-msg: test
+msg: test2
