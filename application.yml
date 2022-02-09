@@ -1,33 +1,9 @@
 server:
-  port: 8081
-
-spring:
-  batch:
-    job:
-      enabled: false
-  cloud:
-    config:
-      enabled: false
-  datasource:
-    jdbc-url: jdbc:mysql://localhost:3306/mytestjobrepository?useSSL=true
-    username: ensocrmadmin
-    password: ensocrmadmin
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
-  inputrecorddatasource:
-    jdbc-url: jdbc:mysql://localhost:3306/mirrorprojectdatastore?useSSL=true
-    username: ensocrmadmin
-    password: ensocrmadmin
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
-  liquibase:
-    default-schema: mirrorprojectdatastore
-    change-log: db/changelog/changelog-master.xml
-    user: ensocrmadmin
-    password: ensocrmadmin
+  port: 8087
 
 logging:
   level:
     root: INFO
     
 msg: testnexxx
+secret: {cipher}db4365fc24efe62524f428e11aa9938f92e6368518ed0f620b9d2c744e6f5d8c
